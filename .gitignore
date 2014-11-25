@@ -1,0 +1,4 @@
+*.certSigningRequest
+*.cer
+.DS_Store
+*.psd

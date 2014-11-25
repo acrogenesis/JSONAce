@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Adrian Rangel</string>
+	<key>Builder Version</key>
+	<string>10600.3.5</string>
+	<key>CFBundleDisplayName</key>
+	<string>JSONAce</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.acrogenesis.jsonace</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>global.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>jsonace.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>An extension that uses ace editor to view JSON documents in the browser.</string>
+	<key>DeveloperIdentifier</key>
+	<string>56Q494QF3L</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://raw.githubusercontent.com/acrogenesis/JSONAce/master/update.plist</string>
+	<key>Website</key>
+	<string>https://github.com/acrogenesis/JSONAce</string>
+</dict>
+</plist>
