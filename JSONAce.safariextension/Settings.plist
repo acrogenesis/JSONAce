@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>12px</string>
+		<key>Key</key>
+		<string>fontsize</string>
+		<key>MaximumValue</key>
+		<real>30</real>
+		<key>MinimumValue</key>
+		<real>8</real>
+		<key>Title</key>
+		<string>Font Size</string>
+		<key>Titles</key>
+		<array>
+			<string>10px</string>
+			<string>11px</string>
+			<string>12px</string>
+			<string>13px</string>
+			<string>14px</string>
+			<string>16px</string>
+			<string>18px</string>
+			<string>20px</string>
+			<string>24px</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<string>10px</string>
+			<string>11px</string>
+			<string>12px</string>
+			<string>13px</string>
+			<string>14px</string>
+			<string>16px</string>
+			<string>18px</string>
+			<string>20px</string>
+			<string>24px</string>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>chrome</string>
+		<key>Key</key>
+		<string>light_theme</string>
+		<key>Title</key>
+		<string>Light Themes</string>
+		<key>Titles</key>
+		<array>
+			<string></string>
+			<string>Chrome</string>
+			<string>Clouds</string>
+			<string>Crimson Editor</string>
+			<string>Dawn</string>
+			<string>Dreamweaver</string>
+			<string>Eclipse</string>
+			<string>GitHub</string>
+			<string>Solarized Light</string>
+			<string>TextMate</string>
+			<string>Tomorrow</string>
+			<string>XCode</string>
+			<string>Kuroir</string>
+			<string>KatzenMilch</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<string></string>
+			<string>chrome</string>
+			<string>clouds</string>
+			<string>crimson_editor</string>
+			<string>dawn</string>
+			<string>dreamweaver</string>
+			<string>eclipse</string>
+			<string>github</string>
+			<string>solarized_light</string>
+			<string>textmate</string>
+			<string>tomorrow</string>
+			<string>xcode</string>
+			<string>kuroir</string>
+			<string>katzenmilch</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Key</key>
+		<string>dark_themes</string>
+		<key>Title</key>
+		<string>Dark Themes</string>
+		<key>Titles</key>
+		<array>
+			<string></string>
+			<string>Ambiance</string>
+			<string>Chaos</string>
+			<string>Clouds Midnight</string>
+			<string>Cobalt</string>
+			<string>idle Fingers</string>
+			<string>krTheme</string>
+			<string>Merbivore</string>
+			<string>Merbivore Soft</string>
+			<string>Mono Industrial</string>
+			<string>Monokai</string>
+			<string>Pastel on dark</string>
+			<string>Solarized Dark</string>
+			<string>Terminal</string>
+			<string>Tomorrow Night</string>
+			<string>Tomorrow Night Blue</string>
+			<string>Tomorrow Night Bright</string>
+			<string>Tomorrow Night 80s</string>
+			<string>Twilight</string>
+			<string>Vibran Ink</string>
+		</array>
+		<key>Type</key>
+		<string>PopUpButton</string>
+		<key>Values</key>
+		<array>
+			<string></string>
+			<string>ambiance</string>
+			<string>chaos</string>
+			<string>clouds_midnight</string>
+			<string>cobalt</string>
+			<string>idle_Fingers</string>
+			<string>krTheme</string>
+			<string>merbivore</string>
+			<string>merbivore_Soft</string>
+			<string>mono_Industrial</string>
+			<string>monokai</string>
+			<string>pastel_on_dark</string>
+			<string>solarized_dark</string>
+			<string>terminal</string>
+			<string>tomorrow_night</string>
+			<string>tomorrow_night_blue</string>
+			<string>tomorrow_night_bright</string>
+			<string>tomorrow_night_80s</string>
+			<string>twilight</string>
+			<string>vibran_ink</string>
+		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>readonly</string>
+		<key>Secure</key>
+		<false/>
+		<key>Title</key>
+		<string>Read-only</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<false/>
+		<key>Key</key>
+		<string>invisibles</string>
+		<key>Title</key>
+		<string>Show Invisibles</string>
+		<key>Type</key>
+		<string>CheckBox</string>
+	</dict>
+</array>
+</plist>
