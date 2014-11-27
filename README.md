@@ -17,6 +17,11 @@ Contributing
 5. Open a [Pull Request][1]
 6. Enjoy a refreshing `Insert Favorite Beverage` and wait
 
+TODO
+---
+- [WIP] Add settings
+- Port to chrome
+
 [1]: https://github.com/acrogenesis/JSONAce/pulls
 [download-link]: https://github.com/acrogenesis/JSONAce/raw/v1/JSONAce.safariextz
 [download-icon]: https://github.com/acrogenesis/JSONAce/blob/master/icon-install_2x.png
