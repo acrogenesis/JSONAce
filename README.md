@@ -7,6 +7,9 @@ Formats & syntax highlights JSON viewed inside of the web browser using the ACE 
 
 ![example]
 
+Thanks to the ACE editor you can easily change the theme, font size, tab size, and more!
+![settings]
+
 Contributing
 ---
 
@@ -19,10 +22,10 @@ Contributing
 
 TODO
 ---
-- [WIP] Add settings
 - Port to chrome
 
 [1]: https://github.com/acrogenesis/JSONAce/pulls
-[download-link]: https://github.com/acrogenesis/JSONAce/raw/v1/JSONAce.safariextz
+[download-link]: https://github.com/acrogenesis/JSONAce/raw/v1.1/JSONAce.safariextz
 [download-icon]: https://github.com/acrogenesis/JSONAce/blob/master/icon-install_2x.png
 [example]: https://github.com/acrogenesis/JSONAce/blob/master/example.png
+[settings]: https://github.com/acrogenesis/JSONAce/blob/master/settings.png

@@ -49,7 +49,7 @@
 		<string>Light Themes</string>
 		<key>Titles</key>
 		<array>
-			<string></string>
+			<string>Dark Themes</string>
 			<string>Chrome</string>
 			<string>Clouds</string>
 			<string>Crimson Editor</string>
@@ -68,7 +68,7 @@
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<string></string>
+			<string>dark_theme</string>
 			<string>chrome</string>
 			<string>clouds</string>
 			<string>crimson_editor</string>
@@ -85,13 +85,15 @@
 		</array>
 	</dict>
 	<dict>
+		<key>DefaultValue</key>
+		<string>light_theme</string>
 		<key>Key</key>
-		<string>dark_themes</string>
+		<string>dark_theme</string>
 		<key>Title</key>
 		<string>Dark Themes</string>
 		<key>Titles</key>
 		<array>
-			<string></string>
+			<string>Light Themes</string>
 			<string>Ambiance</string>
 			<string>Chaos</string>
 			<string>Clouds Midnight</string>
@@ -116,7 +118,7 @@
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<string></string>
+			<string>light_theme</string>
 			<string>ambiance</string>
 			<string>chaos</string>
 			<string>clouds_midnight</string>
@@ -137,6 +139,16 @@
 			<string>twilight</string>
 			<string>vibran_ink</string>
 		</array>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<real>4</real>
+		<key>Key</key>
+		<string>tabsize</string>
+		<key>Title</key>
+		<string>Set Tab Size</string>
+		<key>Type</key>
+		<string>TextField</string>
 	</dict>
 	<dict>
 		<key>DefaultValue</key>

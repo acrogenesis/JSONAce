@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>global HTML page</title>
+  <script type="text/javascript">
+
+  function getFontSize(event){
+    event.target.page.dispatchMessage('setFontSize', safari.extension.settings.fontsize);
+  }
+
+  function getTheme(event) {
+    if (safari.extension.settings.dark_theme === 'light_theme' && safari.extension.settings.light_theme === 'dark_theme'){
+      event.target.page.dispatchMessage('setTheme', 'chrome');
+    } else if (safari.extension.settings.dark_theme !== 'light_theme' && safari.extension.settings.light_theme !== 'dark_theme') {
+      event.target.page.dispatchMessage('setTheme', 'diferentes');
+    } else if (safari.extension.settings.dark_theme === 'light_theme') {
+      event.target.page.dispatchMessage('setTheme', safari.extension.settings.light_theme);
+    } else {
+      event.target.page.dispatchMessage('setTheme', safari.extension.settings.dark_theme);
+    }
+  }
+
+  function getTabSize(event){
+    event.target.page.dispatchMessage('setTabSize', safari.extension.settings.tabsize);
+  }
+
+  function getReadOnly(event){
+    event.target.page.dispatchMessage('setReadOnly', safari.extension.settings.readonly);
+  }
+
+  function getInvisibles(event){
+    event.target.page.dispatchMessage('setInvisibles', safari.extension.settings.invisibles);
+  }
+
+  function respondToMessage(theMessageEvent) {
+    if(theMessageEvent.name === 'getFontSize') {
+      getFontSize(theMessageEvent);
+    }
+    if(theMessageEvent.name === 'getTheme') {
+      getTheme(theMessageEvent);
+    }
+    if(theMessageEvent.name === 'getTabSize') {
+      getTabSize(theMessageEvent);
+    }
+    if(theMessageEvent.name === 'getReadOnly') {
+      getReadOnly(theMessageEvent);
+    }
+    if(theMessageEvent.name === 'getInvisibles') {
+      getInvisibles(theMessageEvent);
+    }
+  }
+
+  safari.application.addEventListener('message',respondToMessage,false);
+  </script>
+</head>
+<body>
+</body>
+</html>
