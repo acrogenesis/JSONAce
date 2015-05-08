@@ -1,9 +1,6 @@
 this.data = document.body.innerHTML;
 this.uri = document.location.href;
 
-function adios(){
-  console.log('bye');
-}
 if(document.getElementsByTagName("pre")[0]){
   // console.log("JSONAce: data is wrapped in <pre>...</pre>, stripping HTML...");
   this.data = document.getElementsByTagName("pre")[0].innerHTML;
