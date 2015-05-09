@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Adrian Rangel</string>
 	<key>Builder Version</key>
-	<string>10600.5.6</string>
+	<string>10600.5.17</string>
 	<key>CFBundleDisplayName</key>
 	<string>JSONAce</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
