@@ -57,7 +57,9 @@
 			<string>Dreamweaver</string>
 			<string>Eclipse</string>
 			<string>GitHub</string>
+			<string>iPlastic</string>
 			<string>Solarized Light</string>
+			<string>SQL Server</string>
 			<string>TextMate</string>
 			<string>Tomorrow</string>
 			<string>XCode</string>
@@ -76,7 +78,9 @@
 			<string>dreamweaver</string>
 			<string>eclipse</string>
 			<string>github</string>
+			<string>iplastic</string>
 			<string>solarized_light</string>
+			<string>sqlserver</string>
 			<string>textmate</string>
 			<string>tomorrow</string>
 			<string>xcode</string>
