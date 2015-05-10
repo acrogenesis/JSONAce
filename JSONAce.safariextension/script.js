@@ -13,4 +13,6 @@
   val = JSON.stringify(o, null, parseInt(document.getElementById('tabsize').textContent));
   editor.session.setValue(val);
 
+  var rawButton = document.getElementById('raw');
+  rawButton.href = location.protocol+'//'+location.host+location.pathname+'?&jsonace='+Math.floor(Math.random()*1000)+'#raw-json';
 }());
