@@ -25,7 +25,7 @@ TODO
 - Port to chrome
 
 [1]: https://github.com/acrogenesis/JSONAce/pulls
-[download-link]: https://github.com/acrogenesis/JSONAce/raw/v1.5/JSONAce.safariextz
+[download-link]: https://github.com/acrogenesis/JSONAce/raw/v1.6/JSONAce.safariextz
 [download-icon]: https://github.com/acrogenesis/JSONAce/blob/master/icon-install_2x.png
 [example]: https://github.com/acrogenesis/JSONAce/blob/master/example.png
 [settings]: https://github.com/acrogenesis/JSONAce/blob/master/settings.png
