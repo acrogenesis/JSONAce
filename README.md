@@ -1,5 +1,6 @@
 JSONAce
 ===============
+[![Gratipay](https://img.shields.io/gratipay/acrogenesis.svg)](https://gratipay.com/~acrogenesis)
 
 Formats & syntax highlights JSON viewed inside of the web browser using the ACE editor!
 
