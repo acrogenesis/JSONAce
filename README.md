@@ -1,10 +1,6 @@
-# URGENT MESSAGE
 ![](http://www.motherjones.com/files/images/blog_apple_evil_empire.jpg)
 
-Apple changed their Safari Extensions policy and now I need a Developer Account which costs $100 USD to release new bug fixes and features.
-Please send me some cash to gather the $100. Thanks! https://www.changetip.com/tipme/acrogenesis
-
-
+Apple changed their Safari Extensions policy and now I need a Developer Account which costs $100 USD to release new bug fixes and features. So the installation must be manual.
 
 JSONAce
 ===============
@@ -12,12 +8,19 @@ JSONAce
 
 Formats & syntax highlights JSON viewed inside of the web browser using the ACE editor!
 
-[Install Now ![download-icon]][download-link]
-
 ![example]
 
 Thanks to the ACE editor you can easily change the theme, font size, tab size, and more!
 ![settings]
+
+Installation
+---
+1. [Download] the GitHub repo as a zip and extract the contents.
+2. Activate the `Develop` menu bar from Advance Settings in Safari.
+3. On the menu bar click on Develop > Show Extension Builder.
+4. On the bottom left corner click on the `+`, select New Extension...
+5. Select the `JSONAce.safariextension` folder.
+6. On the top right corner of the Extension Builder window click Install 
 
 Contributing
 ---
@@ -34,7 +37,6 @@ TODO
 - Port to chrome
 
 [1]: https://github.com/acrogenesis/JSONAce/pulls
-[download-link]: https://github.com/acrogenesis/JSONAce/raw/v1.7/JSONAce.safariextz
-[download-icon]: https://github.com/acrogenesis/JSONAce/blob/master/icon-install_2x.png
+[Download]: https://github.com/acrogenesis/JSONAce/archive/master.zip
 [example]: https://github.com/acrogenesis/JSONAce/blob/master/example.png
 [settings]: https://github.com/acrogenesis/JSONAce/blob/master/settings.png
