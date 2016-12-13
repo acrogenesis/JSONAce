@@ -1,0 +1,33 @@
+#button {
+  background: rgba(200, 200, 200, 0.25);
+  border: 1px solid rgba(200, 200, 200, 0.9);
+  border-radius: 4px;
+  color: black;
+  font-family: Verdana;
+  padding: 8px;
+
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+#button:hover {
+  background: rgba(200, 200, 200, 0.5);
+}
+
+#button:active {
+  background: rgba(200, 200, 200, 0.75);
+}
+
+#ace {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}

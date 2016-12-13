@@ -4,13 +4,9 @@
 <array>
 	<dict>
 		<key>DefaultValue</key>
-		<string>12px</string>
+		<string>12</string>
 		<key>Key</key>
 		<string>fontsize</string>
-		<key>MaximumValue</key>
-		<real>30</real>
-		<key>MinimumValue</key>
-		<real>8</real>
 		<key>Title</key>
 		<string>Font Size</string>
 		<key>Titles</key>
@@ -29,27 +25,26 @@
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<string>10px</string>
-			<string>11px</string>
-			<string>12px</string>
-			<string>13px</string>
-			<string>14px</string>
-			<string>16px</string>
-			<string>18px</string>
-			<string>20px</string>
-			<string>24px</string>
+			<string>10</string>
+			<string>11</string>
+			<string>12</string>
+			<string>13</string>
+			<string>14</string>
+			<string>16</string>
+			<string>18</string>
+			<string>20</string>
+			<string>24</string>
 		</array>
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
 		<string>chrome</string>
 		<key>Key</key>
-		<string>light_theme</string>
+		<string>theme</string>
 		<key>Title</key>
-		<string>Light Themes</string>
+		<string>Theme</string>
 		<key>Titles</key>
 		<array>
-			<string>Dark Themes</string>
 			<string>Chrome</string>
 			<string>Clouds</string>
 			<string>Crimson Editor</string>
@@ -65,39 +60,6 @@
 			<string>XCode</string>
 			<string>Kuroir</string>
 			<string>KatzenMilch</string>
-		</array>
-		<key>Type</key>
-		<string>PopUpButton</string>
-		<key>Values</key>
-		<array>
-			<string>dark_theme</string>
-			<string>chrome</string>
-			<string>clouds</string>
-			<string>crimson_editor</string>
-			<string>dawn</string>
-			<string>dreamweaver</string>
-			<string>eclipse</string>
-			<string>github</string>
-			<string>iplastic</string>
-			<string>solarized_light</string>
-			<string>sqlserver</string>
-			<string>textmate</string>
-			<string>tomorrow</string>
-			<string>xcode</string>
-			<string>kuroir</string>
-			<string>katzenmilch</string>
-		</array>
-	</dict>
-	<dict>
-		<key>DefaultValue</key>
-		<string>light_theme</string>
-		<key>Key</key>
-		<string>dark_theme</string>
-		<key>Title</key>
-		<string>Dark Themes</string>
-		<key>Titles</key>
-		<array>
-			<string>Light Themes</string>
 			<string>Ambiance</string>
 			<string>Chaos</string>
 			<string>Clouds Midnight</string>
@@ -114,7 +76,7 @@
 			<string>Tomorrow Night</string>
 			<string>Tomorrow Night Blue</string>
 			<string>Tomorrow Night Bright</string>
-			<string>Tomorrow Night 80s</string>
+			<string>Tomorrow Night 80's</string>
 			<string>Twilight</string>
 			<string>Vibran Ink</string>
 		</array>
@@ -122,7 +84,21 @@
 		<string>PopUpButton</string>
 		<key>Values</key>
 		<array>
-			<string>light_theme</string>
+			<string>chrome</string>
+			<string>clouds</string>
+			<string>crimson_editor</string>
+			<string>dawn</string>
+			<string>dreamweaver</string>
+			<string>eclipse</string>
+			<string>github</string>
+			<string>iplastic</string>
+			<string>solarized_light</string>
+			<string>sqlserver</string>
+			<string>textmate</string>
+			<string>tomorrow</string>
+			<string>xcode</string>
+			<string>kuroir</string>
+			<string>katzenmilch</string>
 			<string>ambiance</string>
 			<string>chaos</string>
 			<string>clouds_midnight</string>
@@ -156,23 +132,21 @@
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<false/>
+		<string>false</string>
 		<key>Key</key>
-		<string>readonly</string>
-		<key>Secure</key>
-		<false/>
+		<string>editor</string>
 		<key>Title</key>
-		<string>Read-only</string>
+		<string>Enable editor</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>
 	<dict>
 		<key>DefaultValue</key>
-		<false/>
+		<string>false</string>
 		<key>Key</key>
-		<string>invisibles</string>
+		<string>invisible</string>
 		<key>Title</key>
-		<string>Show Invisibles</string>
+		<string>Show invisible characters</string>
 		<key>Type</key>
 		<string>CheckBox</string>
 	</dict>

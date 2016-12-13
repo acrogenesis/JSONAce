@@ -1,91 +1,60 @@
-this.data = document.body.innerHTML;
-this.uri = document.location.href;
-
-if(document.getElementsByTagName("pre")[0] && document.body.getElementsByTagName('*').length == 1 && document.getElementsByTagName("pre").length == 1){
-  // console.log("JSONAce: data is wrapped in <pre>...</pre>, stripping HTML...");
-  this.data = document.getElementsByTagName("pre")[0].innerHTML;
-}
-
-function IsJsonString(str) {
+function isJsonString(string) {
   try {
-      JSON.parse(str);
+    JSON.parse(string);
   } catch (e) {
-      return false;
+    return false;
   }
   return true;
 }
 
-var is_json = IsJsonString(this.data);
+function hiddenSpan(id, message) {
+  return `<span id="${id}" class="hidden">${message}</span>`;
+}
 
-if(is_json){
-  if (!(window.location.hash === "#raw-json")){
-    /*
-     * The JSONFormatter helper object. This contains two major functions, jsonToHTML and errorPage,
-     * each of which returns an HTML document.
-     */
-    var outputDoc = '<a id="raw" href="#" class="btn btn-default">RAW</a><div id="JSONAceEditor">' +
-                    this.data +
-                    '</div></body></html>';
-    // document.body.innerHTML = outputDoc;
-    var impcss = document.createElement('link');
-    impcss.rel = "stylesheet";
-    impcss.href = safari.extension.baseURI + 'default.css';
-    var impace = document.createElement('script');
-    impace.src = safari.extension.baseURI + 'ace.js';
-    var beautify = document.createElement('script');
-    beautify.src = safari.extension.baseURI + 'ext-beautify.js';
+function filePath(file) {
+  return safari.extension.baseURI + file;
+}
 
-    document.head.appendChild(impcss);
-    document.head.appendChild(impace);
-    document.head.appendChild(beautify);
-    document.body.innerHTML = outputDoc;
+function appendCSS(file) {
+  var css = document.createElement('link');
+  css.rel = "stylesheet";
+  css.href = filePath(file);
+  document.head.appendChild(css);
+}
 
-    var jsonace = document.createElement('script');
-    jsonace.src = safari.extension.baseURI + 'jsonace.js';
-    document.body.appendChild(jsonace);
+function appendJS(location, file) {
+  var js = document.createElement('script');
+  js.src = filePath(file);
 
-    var ace_script = document.createElement('script');
-    ace_script.src = safari.extension.baseURI + 'script.js';
-    document.body.appendChild(ace_script);
-
-    function buildHiddenSpan(id, message) {
-      return '<span id="' + id + '" class="hidden">' + message + '</span>';
-    }
-
-    function getAnswer(theMessageEvent) {
-      var hiddenfields = '';
-      if (theMessageEvent.name === 'setFontSize') {
-        hiddenfields += buildHiddenSpan('fontsize', theMessageEvent.message);
-      }
-      if (theMessageEvent.name === 'setTheme') {
-        hiddenfields += buildHiddenSpan('theme', theMessageEvent.message);
-      }
-      if (theMessageEvent.name === 'setTabSize') {
-        hiddenfields += buildHiddenSpan('tabsize', theMessageEvent.message);
-      }
-      if (theMessageEvent.name === 'setReadOnly') {
-        hiddenfields += buildHiddenSpan('readonly', theMessageEvent.message);
-      }
-      if (theMessageEvent.name === 'setInvisibles') {
-        hiddenfields += buildHiddenSpan('invisibles', theMessageEvent.message);
-      }
-      document.body.innerHTML += hiddenfields;
-    }
-    safari.self.addEventListener('message', getAnswer, false);
-
-    safari.self.tab.dispatchMessage('getFontSize');
-    safari.self.tab.dispatchMessage('getTheme');
-    safari.self.tab.dispatchMessage('getTabSize');
-    safari.self.tab.dispatchMessage('getReadOnly');
-    safari.self.tab.dispatchMessage('getInvisibles');
-  } else {
-    var outputDoc = '<a id="pretty" href="'+location.protocol+'//'+location.host+location.pathname+'?&jsonace='+Math.floor(Math.random()*1000)+'" class="btn btn-default">BEAUTIFY</a>' + this.data;
-    var impcss = document.createElement('link');
-    impcss.rel = "stylesheet";
-    impcss.href = safari.extension.baseURI + 'default.css';
-    document.head.appendChild(impcss);
-    document.body.innerHTML = outputDoc;
+  if (location === 'head') {
+    document.head.appendChild(js);
+  } else if (location === 'body') {
+    document.body.appendChild(js);
   }
-}else {
-  // console.log("JSONAce: this is not json, not formatting.");
+}
+
+function appendSetting(setting) {
+  document.body.innerHTML += hiddenSpan(setting.name, setting.message);
+}
+
+if (document.body.getElementsByTagName('*').length == 1 &&
+    document.getElementsByTagName('pre').length == 1) {
+
+  this.data = document.getElementsByTagName('pre')[0].innerHTML;
+}
+
+if (isJsonString(this.data)) {
+  appendCSS('jsonace.css');
+  appendJS('head', 'ace/ace.js');
+  appendJS('body', 'script.js');
+
+  document.body.innerHTML = `<button id="button" class="raw" onclick="toggleStyle()">VIEW RAW</button>
+    <div class="data raw hidden">${this.data}</div>
+    <div id="ace" class="data pretty">${this.data}</div>`;
+
+  safari.self.addEventListener('message', appendSetting, false);
+
+  ['getFontSize', 'getTheme', 'getTabSize', 'getReadOnly', 'getInvisibles'].forEach(function(setting) {
+    safari.self.tab.dispatchMessage(setting);
+  });
 }
