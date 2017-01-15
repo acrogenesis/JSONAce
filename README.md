@@ -18,7 +18,7 @@ Installation
 1. [Download] the GitHub repo as a zip and extract the contents.
 2. Activate the `Develop` menu bar from Advance Settings in Safari.
 3. On the menu bar click on Develop > Show Extension Builder.
-4. On the bottom left corner click on the `+`, select New Extension...
+4. On the bottom left corner click on the `+`, select Add Extension...
 5. Select the `JSONAce.safariextension` folder.
 6. On the top right corner of the Extension Builder window click Install 
 
