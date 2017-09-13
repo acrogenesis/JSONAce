@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Adrian Rangel</string>
+	<string>James Harrison</string>
 	<key>Builder Version</key>
-	<string>12602.2.14.0.7</string>
+	<string>12603.3.8</string>
 	<key>CFBundleDisplayName</key>
 	<string>JSONAce</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.acrogenesis.jsonace</string>
+	<string>com.jjlharrison.jsonace</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -34,7 +34,7 @@
 	<key>Description</key>
 	<string>An extension that uses ace editor to view JSON documents in the browser.</string>
 	<key>DeveloperIdentifier</key>
-	<string>56Q494QF3L</string>
+	<string>635LU5M475</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -48,8 +48,8 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://raw.githubusercontent.com/acrogenesis/JSONAce/master/update.plist</string>
+	<string>https://raw.githubusercontent.com/jjlharrison/JSONAce/master/update.plist</string>
 	<key>Website</key>
-	<string>https://github.com/acrogenesis/JSONAce</string>
+	<string>https://github.com/jjlharrison/JSONAce</string>
 </dict>
 </plist>

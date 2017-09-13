@@ -4,13 +4,14 @@ Apple changed their Safari Extensions policy and now I need a Developer Account 
 
 JSONAce
 ===============
-[![Gratipay](https://img.shields.io/gratipay/acrogenesis.svg)](https://gratipay.com/~acrogenesis)
 
-Formats & syntax highlights JSON viewed inside of the web browser using the ACE editor!
+This is a fork of [JSONAce by acrogenesis](https://github.com/acrogenesis/JSONAce).
+
+Formats & syntax highlights JSON viewed inside of the web browser using the ACE editor.
 
 ![example]
 
-Thanks to the ACE editor you can easily change the theme, font size, tab size, and more!
+Thanks to the ACE editor you can easily change the theme, font size, tab size, and more.
 ![settings]
 
 Installation
@@ -20,7 +21,7 @@ Installation
 3. On the menu bar click on Develop > Show Extension Builder.
 4. On the bottom left corner click on the `+`, select Add Extension...
 5. Select the `JSONAce.safariextension` folder.
-6. On the top right corner of the Extension Builder window click Install 
+6. On the top right corner of the Extension Builder window click Install
 
 Contributing
 ---
@@ -30,13 +31,10 @@ Contributing
 3. Commit your changes `git commit -am "Cool new feature"`
 4. Push to the branch `git push origin my_markup`
 5. Open a [Pull Request][1]
-6. Enjoy a refreshing `Insert Favorite Beverage` and wait
+6. Enjoy a refreshing `Insert Favourite Beverage` and wait
 
-TODO
----
-- Port to chrome
 
-[1]: https://github.com/acrogenesis/JSONAce/pulls
-[Download]: https://github.com/acrogenesis/JSONAce/archive/master.zip
-[example]: https://github.com/acrogenesis/JSONAce/blob/master/example.png
-[settings]: https://github.com/acrogenesis/JSONAce/blob/master/settings.png
+[1]: https://github.com/jjlharrison/JSONAce/pulls
+[Download]: https://github.com/jjlharrison/JSONAce/archive/master.zip
+[example]: https://github.com/jjlharrison/JSONAce/blob/master/example.png
+[settings]: https://github.com/jjlharrison/JSONAce/blob/master/settings.png
