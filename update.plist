@@ -6,15 +6,15 @@
    <array>
      <dict>
        <key>CFBundleIdentifier</key>
-       <string>com.acrogenesis.jsonace</string>
+       <string>com.jjlharrison.jsonace</string>
        <key>Developer Identifier</key>
-       <string>56Q494QF3L</string>
+       <string>635LU5M475</string>
        <key>CFBundleVersion</key>
-       <string>1.7</string>
+       <string>1.8</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.7</string>
+       <string>1.8</string>
        <key>URL</key>
-       <string>https://github.com/acrogenesis/JSONAce/raw/v1.7/JSONAce.safariextz</string>
+       <string>https://github.com/jjlharrison/JSONAce/raw/v1.8/JSONAce.safariextz</string>
      </dict>
    </array>
 </dict>
