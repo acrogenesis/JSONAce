@@ -1,6 +1,4 @@
-![](http://www.motherjones.com/files/images/blog_apple_evil_empire.jpg)
-
-Apple changed their Safari Extensions policy and now I need a Developer Account which costs $100 USD to release new bug fixes and features. So the installation must be manual.
+Now available in the app store as [Advanced JSON Viewer](https://apps.apple.com/app/advanced-json-viewer/id6739271287) for iOS, macOS, and visionOS.
 
 JSONAce
 ===============
